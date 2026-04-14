@@ -1,0 +1,157 @@
+/* ===== IMPORT TAILWIND CSS ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== IMPORT FONT TỪ GOOGLE FONTS ===== */
+/* Press Start 2P: Font pixel cho tiêu đề (giống chữ trong Minecraft) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== BIẾN MÀU SẮC TOÀN CỤC ===== */
+:root {
+  --mc-green: #4ade80;
+  --mc-dark-green: #15803d;
+  --mc-brown: #92400e;
+  --mc-stone: #6b7280;
+  --mc-sky: #0f172a;
+  --mc-sky-light: #1e293b;
+}
+
+/* ===== STYLE CƠ BẢN ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--mc-sky);
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  /* Chống layout shift khi load font */
+  font-display: swap;
+}
+
+/* ===== THANH CUỘN TÙY CHỈNH (Scrollbar) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+  background: #4ade80;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+/* ===== COMPONENT TÙY CHỈNH ===== */
+/* Sử dụng @layer để Tailwind quản lý đúng thứ tự CSS */
+@layer components {
+
+  /* Block card - tạo viền giống block trong Minecraft */
+  .mc-block {
+    @apply border-2 border-black;
+    /* Bóng đổ tạo hiệu ứng 3D như block Minecraft */
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8),
+                inset 1px 1px 0px rgba(255, 255, 255, 0.15);
+  }
+
+  /* Button phong cách Minecraft - nhấn xuống khi click */
+  .mc-button {
+    @apply px-6 py-3 font-bold text-white relative cursor-pointer
+           transition-transform duration-100 border-2 border-black
+           inline-block text-center select-none;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  }
+  /* Hiệu ứng hover: nút "nổi lên" một chút */
+  .mc-button:hover {
+    filter: brightness(1.1);
+  }
+  /* Hiệu ứng click: nút "ấn xuống" */
+  .mc-button:active {
+    @apply translate-x-[3px] translate-y-[3px];
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Tiêu đề phong cách Minecraft */
+  .mc-heading {
+    @apply font-pixel text-mc-green leading-relaxed;
+    text-shadow: 2px 2px 0px #15803d;
+  }
+
+  /* Input phong cách Minecraft */
+  .mc-input {
+    @apply bg-slate-800 border-2 border-slate-600 text-white px-4 py-2
+           focus:outline-none focus:border-mc-green transition-colors w-full;
+  }
+
+  /* Badge / tag nhỏ */
+  .mc-badge {
+    @apply inline-block px-2 py-0.5 text-xs font-bold border;
+  }
+}
+
+/* ===== NỀN MINECRAFT ===== */
+
+/* Nền đất (Dirt) - màu nâu với pattern */
+.mc-dirt-bg {
+  background-color: #422006;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent, transparent 7px,
+      rgba(0, 0, 0, 0.08) 7px, rgba(0, 0, 0, 0.08) 8px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent, transparent 7px,
+      rgba(0, 0, 0, 0.08) 7px, rgba(0, 0, 0, 0.08) 8px
+    );
+}
+
+/* Nền đá (Stone) - màu xám với pattern */
+.mc-stone-bg {
+  background-color: #1e293b;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px,
+      transparent 1px, transparent 8px
+    );
+}
+
+/* ===== ANIMATION SHIMMER (loading) ===== */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Skeleton loading giống Minecraft stone */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    #1e293b 25%,
+    #334155 50%,
+    #1e293b 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ===== HIỆU ỨNG FADE-IN KHI VÀO TRANG ===== */
+.page-enter {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

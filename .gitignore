@@ -1,0 +1,49 @@
+# ===== THƯ MỤC BUILD CỦA NEXT.JS =====
+.next/
+out/
+
+# ===== NODE MODULES (thư viện, rất nặng ~200MB, không cần push lên Git) =====
+node_modules/
+
+# ===== BIẾN MÔI TRƯỜNG (chứa mật khẩu, API key - KHÔNG được public) =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== LOG LỖI =====
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== HỆ ĐIỀU HÀNH =====
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ===== EDITOR / IDE =====
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===== TYPESCRIPT =====
+*.tsbuildinfo
+next-env.d.ts
+
+# ===== VERCEL (deploy) =====
+.vercel
+
+# ===== MISC =====
+*.pem
+.cache/
