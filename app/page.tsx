@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 // ===== DỮ LIỆU CÁC CHẾ ĐỘ CHƠI =====
 const gameModes = [
   {
+    slug: 'survival',
     name: 'Survival',
     emoji: '⚔️',
     bgColor: '#15803d',
@@ -22,6 +23,7 @@ const gameModes = [
     tip: 'Mẹo: Xây nhà trước khi trời tối hoặc bạn sẽ bị zombie tấn công!',
   },
   {
+    slug: 'creative',
     name: 'Creative',
     emoji: '🎨',
     bgColor: '#1d4ed8',
@@ -30,6 +32,7 @@ const gameModes = [
     tip: 'Mẹo: Nhấn F3+H để xem ID của block khi hover.',
   },
   {
+    slug: 'hardcore',
     name: 'Hardcore',
     emoji: '💀',
     bgColor: '#991b1b',
@@ -260,9 +263,22 @@ export default function HomePage() {
                     {mode.description}
                   </p>
                   {/* Hộp tip */}
-                  <div className="border-l-4 border-mc-gold pl-3 text-xs text-gray-400 italic">
+                  <div className="border-l-4 border-mc-gold pl-3 text-xs text-gray-400 italic mb-4">
                     {mode.tip}
                   </div>
+                  {/* Nút xem chi tiết */}
+                  <Link
+                    href={`/gamemodes/${mode.slug}`}
+                    className="block w-full text-center py-2 text-sm font-bold
+                               border-2 border-black text-white transition-all
+                               hover:brightness-110 active:translate-y-[1px]"
+                    style={{
+                      backgroundColor: mode.bgColor,
+                      boxShadow: '2px 2px 0px rgba(0,0,0,0.8)',
+                    }}
+                  >
+                    Xem Chi Tiết →
+                  </Link>
                 </div>
               </div>
             ))}
@@ -315,10 +331,23 @@ export default function HomePage() {
                   <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
                     {mod.description}
                   </p>
-                  <div className="flex items-center justify-between mt-3 text-xs text-gray-500">
+                  <div className="flex items-center justify-between mt-3 mb-3 text-xs text-gray-500">
                     <span>📦 v{mod.version}</span>
                     <span>⬇️ {mod.downloads}</span>
                   </div>
+                  {/* Nút xem chi tiết mod */}
+                  <Link
+                    href={`/mods/${mod.id}`}
+                    className="block w-full text-center py-2 text-sm font-bold
+                               border-2 border-black text-white transition-all
+                               hover:brightness-110 active:translate-y-[1px]"
+                    style={{
+                      backgroundColor: mod.color,
+                      boxShadow: '2px 2px 0px rgba(0,0,0,0.8)',
+                    }}
+                  >
+                    Xem Chi Tiết →
+                  </Link>
                 </div>
               </div>
             ))}

@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "survival",
+    "name": "Survival",
+    "emoji": "⚔️",
+    "color": "#15803d",
+    "difficulty": "Trung bình",
+    "shortDesc": "Thu thập tài nguyên, xây nhà, chiến đấu với mob và cố gắng sống sót qua đêm đen!",
+    "longDesc": "Chế độ Survival là trải nghiệm cốt lõi của Minecraft. Bạn xuất hiện trong một thế giới hoàn toàn xa lạ, không có gì trong tay. Từ đó bạn phải tự mình thu thập tài nguyên, chế tạo công cụ, xây dựng nơi trú ẩn và sinh tồn qua những đêm tối đầy quái vật. Đây là hành trình từ hai bàn tay trắng trở thành người hùng chinh phục The End!",
+    "features": [
+      { "icon": "❤️", "title": "Thanh máu (HP)", "desc": "Bạn có 10 trái tim = 20 HP. Bị mob tấn công, rơi xuống, chết đuối sẽ mất máu. Máu hồi lại khi no bụng." },
+      { "icon": "🍖", "title": "Thanh đói (Hunger)", "desc": "Cần ăn thức ăn để duy trì. Nếu đói xuống 0, HP sẽ giảm dần. Luôn mang thức ăn dự phòng!" },
+      { "icon": "✨", "title": "Điểm kinh nghiệm (XP)", "desc": "Giết mob, khai thác quặng sẽ cho XP. Dùng XP để enchant (phù phép) tại Enchanting Table." },
+      { "icon": "💀", "title": "Khi chết", "desc": "Rơi toàn bộ đồ xuống sàn và có 5 phút để nhặt lại. Spawn về điểm ngủ gần nhất." }
+    ],
+    "mobs": [
+      { "name": "Zombie", "emoji": "🧟", "danger": 2, "desc": "Xuất hiện ban đêm, đốt cháy dưới nắng. Nguy hiểm khi đi theo đàn." },
+      { "name": "Skeleton", "emoji": "💀", "danger": 3, "desc": "Bắn tên từ xa. Rất nguy hiểm ở địa hình trống trải. Dùng khiên hoặc vào gần." },
+      { "name": "Creeper", "emoji": "💚", "danger": 4, "desc": "Không gây âm thanh khi đến gần rồi nổ tung. Nguy hiểm nhất với người mới!" },
+      { "name": "Spider", "emoji": "🕷️", "danger": 2, "desc": "Leo tường được, hoạt động cả ngày lẫn đêm. Trứ bò khi thường." },
+      { "name": "Enderman", "emoji": "🖤", "danger": 4, "desc": "Chỉ tấn công khi nhìn thẳng vào mắt. Teleport ngẫu nhiên, rất khó đánh." },
+      { "name": "Witch", "emoji": "🧙", "danger": 3, "desc": "Ném potion tấn công, có thể hồi máu cho bản thân. Mang theo Milk để xử lý debuff." }
+    ],
+    "goals": [
+      { "step": 1, "title": "Sinh tồn những đêm đầu", "desc": "Xây nhà, chế đồ gỗ → đá → sắt để trang bị cơ bản." },
+      { "step": 2, "title": "Trang bị Iron Armor & Tools", "desc": "Đào tìm quặng sắt ở Y=15-64. Đủ giáp sắt mới an toàn khám phá hang." },
+      { "step": 3, "title": "Khám phá Nether", "desc": "Tạo cổng Nether từ 10 Obsidian. Tìm Blaze Rod để làm Brewing Stand." },
+      { "step": 4, "title": "Tìm Diamond & Netherite", "desc": "Diamond ở Y=-58, Netherite ở Nether Y=8-22. Đây là vật liệu tốt nhất game." },
+      { "step": 5, "title": "Đánh The End Dragon", "desc": "Phá mắt Ender trên cột thạch anh, sau đó tấn công Dragon khi hạ xuống." }
+    ],
+    "tips": [
+      "Không bao giờ đào thẳng xuống — có thể rơi vào lava!",
+      "Đặt Torch bên tay phải khi vào hang để không bị lạc",
+      "Luôn mang ít nhất 64 khối để bịt lại khi gặp lava",
+      "Giường dùng được cả trong Nether để đặt spawn point",
+      "Giữ Shift khi đứng gần mép để không bị ngã",
+      "Diamond Sword + Enchantment mạnh hơn Netherite Sword vanilla rất nhiều"
+    ]
+  },
+  {
+    "slug": "creative",
+    "name": "Creative",
+    "emoji": "🎨",
+    "color": "#1d4ed8",
+    "difficulty": "Không có",
+    "shortDesc": "Bay tự do, có đủ tất cả block trong kho đồ, không mất HP. Thỏa sức sáng tạo và xây dựng!",
+    "longDesc": "Chế độ Creative giải phóng hoàn toàn giới hạn của Minecraft. Không HP, không đói, không mob tấn công — bạn có toàn bộ block trong game để xây dựng bất cứ điều gì trí tưởng tượng cho phép. Từ những ngôi nhà đơn giản đến thành phố khổng lồ, từ máy Redstone phức tạp đến tác phẩm nghệ thuật pixel — Creative mode là nơi mọi giấc mơ trở thành hiện thực trong thế giới Minecraft.",
+    "features": [
+      { "icon": "✈️", "title": "Bay tự do", "desc": "Nhấn Space 2 lần để bay. Giữ Space để lên cao, Shift để xuống thấp. Di chuyển nhanh hơn nhiều khi bay." },
+      { "icon": "📦", "title": "Kho đồ vô hạn", "desc": "Tab Creative có tất cả block và item. Dùng thanh tìm kiếm để tìm nhanh. Click chuột giữa để lấy block đang nhìn." },
+      { "icon": "🛡️", "title": "Bất tử", "desc": "Không mất máu dù rơi từ cao, bơi trong lava, hay bị mob tấn công. Tập trung hoàn toàn vào xây dựng!" },
+      { "icon": "⚡", "title": "Phá block tức thì", "desc": "Click chuột trái một cái là phá ngay bất kỳ block nào, kể cả Obsidian và Bedrock." }
+    ],
+    "buildingTips": [
+      { "icon": "📐", "title": "Dùng lưới tọa độ F3", "desc": "Nhấn F3 để xem tọa độ XYZ. Giúp căn chỉnh và xây đối xứng chính xác hơn." },
+      { "icon": "🎨", "title": "Phối màu block", "desc": "Dùng các block cùng tông màu (vd: Stone + Cobblestone + Stone Brick) để tạo texture tự nhiên." },
+      { "icon": "📏", "title": "Xây theo tỷ lệ", "desc": "Nhà thực tế cao khoảng 5-8 block, cửa 2 block. Tỷ lệ đúng giúp công trình trông thực tế hơn." },
+      { "icon": "🌿", "title": "Thêm cây xanh & chi tiết", "desc": "Cây cối, bụi rậm, đèn lồng, biển hiệu... Các chi tiết nhỏ tạo nên sự khác biệt lớn!" },
+      { "icon": "💡", "title": "Dùng WorldEdit mod", "desc": "WorldEdit giúp copy, paste, fill khu vực lớn cực nhanh. Cần thiết cho công trình khổng lồ." },
+      { "icon": "🏗️", "title": "Xây từ bên trong ra ngoài", "desc": "Bắt đầu từ khung xương (foundation & walls), sau đó mới làm mái, rồi chi tiết nội thất." }
+    ],
+    "blockIdeas": [
+      { "theme": "Rustic/Nông thôn", "blocks": ["Oak Log", "Spruce Plank", "Cobblestone", "Hay Bale"] },
+      { "theme": "Modern/Hiện đại", "blocks": ["Quartz Block", "Glass Pane", "Iron Trapdoor", "Smooth Stone"] },
+      { "theme": "Medieval/Trung cổ", "blocks": ["Stone Brick", "Deepslate Tile", "Dark Oak", "Mossy Cobblestone"] },
+      { "theme": "Fantasy/Huyền ảo", "blocks": ["Purpur Block", "End Stone Brick", "Amethyst", "Crying Obsidian"] }
+    ],
+    "tips": [
+      "Ctrl+Pick Block (chuột giữa) lấy cả NBT data của block đặc biệt",
+      "Dùng Structure Block để save và load lại công trình",
+      "Shift+Click vào block trong kho để lấy toàn bộ stack 64 cái",
+      "F1 ẩn HUD để chụp ảnh công trình đẹp hơn",
+      "Dùng Spectator Mode (F3+N) để bay xuyên block kiểm tra bên trong"
+    ]
+  },
+  {
+    "slug": "hardcore",
+    "name": "Hardcore",
+    "emoji": "💀",
+    "color": "#991b1b",
+    "difficulty": "Cực khó",
+    "shortDesc": "Giống Survival nhưng chỉ có 1 mạng. Nếu chết, thế giới bị xóa vĩnh viễn. Thử thách tối thượng!",
+    "longDesc": "Hardcore Mode là thử thách tối thượng của Minecraft — chơi Survival ở độ khó Hard nhưng chỉ có đúng một mạng. Không respawn, không save scum. Khi chết, thế giới của bạn bị xóa vĩnh viễn (hoặc chuyển sang Spectator Mode). Mỗi quyết định đều có trọng lượng, mỗi mạng mob đều nguy hiểm hơn. Đây là nơi những người chơi giỏi nhất chứng minh bản thân.",
+    "features": [
+      { "icon": "💔", "title": "Một mạng duy nhất", "desc": "Chết = game over. Thế giới bị khóa ở Spectator Mode hoặc xóa hoàn toàn. Không có cơ hội thứ hai." },
+      { "icon": "😈", "title": "Độ khó Hard cố định", "desc": "Mob gây sát thương tối đa, có thể phá cửa gỗ/sắt, Creeper nổ to hơn. Không thể giảm độ khó." },
+      { "icon": "⏱️", "title": "Mỗi giây đều quan trọng", "desc": "Không có chỗ cho sai lầm. Mỗi quyết định về trang bị, đường đi và chiến thuật đều có thể quyết định số phận." },
+      { "icon": "🏆", "title": "Thành tích vẻ vang", "desc": "Sống sót 100 ngày Hardcore là cột mốc mà cộng đồng Minecraft vô cùng tôn trọng và ngưỡng mộ." }
+    ],
+    "deathCauses": [
+      { "cause": "Creeper bất ngờ", "emoji": "💚", "percent": 35, "tip": "Luôn nhìn xung quanh, đặc biệt sau lưng. Nghe âm thanh Creeper hiss và lùi ngay lập tức." },
+      { "cause": "Rơi xuống void/lava", "emoji": "🔥", "percent": 25, "tip": "Không đào thẳng xuống, mang Fire Resistance Potion khi vào hang sâu." },
+      { "cause": "Thiếu thức ăn", "emoji": "🍖", "percent": 15, "tip": "Luôn có ít nhất 2 stack thức ăn. Lập farm sớm nhất có thể." },
+      { "cause": "Mob đêm đầu", "emoji": "🧟", "percent": 15, "tip": "Không phiêu lưu đêm đầu. Xây nhà trước 5 phút đầu." },
+      { "cause": "Overconfidence", "emoji": "😤", "percent": 10, "tip": "Dù có full Netherite, đừng bao giờ chủ quan. Một Creeper vẫn có thể kết thúc run của bạn." }
+    ],
+    "rules": [
+      "Không bao giờ ra ngoài ban đêm khi chưa có giáp đầy đủ",
+      "Không vào hang sâu mà không có ít nhất 64 Torch và vài stack thức ăn",
+      "Luôn có Fire Resistance Potion khi đến gần lava",
+      "Không Nether trước khi có giáp Iron đầy đủ và ít nhất 16 Golden Apple",
+      "Enchant giáp và vũ khí trước khi đối mặt bất kỳ boss nào",
+      "Tạo nhiều Chest lưu trữ ở nhiều điểm để không mất hết khi chết"
+    ],
+    "tips": [
+      "Lập ngay farm lúa mì/carrot từ ngày đầu tiên để không bao giờ đói",
+      "Enchantment Feather Falling IV là bắt buộc cho giày — bảo vệ khỏi fall damage",
+      "Protection IV trên toàn bộ giáp giúp chịu được phần lớn damage",
+      "Mang theo Totem of Undying khi đến vùng nguy hiểm — cứu mạng một lần",
+      "Build xong phải đặt Bed gần nhất và ngủ mỗi đêm để reset spawn",
+      "Dùng shield (khiên) chặn Arrow và Creeper explosion — quan trọng hơn sword"
+    ]
+  }
+]
