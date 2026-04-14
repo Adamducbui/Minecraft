@@ -3,6 +3,7 @@
 // Cần 'use client' vì có state (tìm kiếm, bộ lọc) thay đổi khi người dùng tương tác
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 
 // Định nghĩa kiểu dữ liệu cho một Mod/Map (TypeScript)
 // Interface giúp TypeScript hiểu cấu trúc object
@@ -240,10 +241,25 @@ export default function ModsContent({ mods, categories }: ModsContentProps) {
                   ))}
                 </div>
 
-                {/* Footer: version và downloads */}
-                <div className="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-slate-700">
-                  <span>📦 v{mod.version}</span>
-                  <span>⬇️ {mod.downloads}</span>
+                {/* Footer: version, downloads và nút xem chi tiết */}
+                <div className="pt-3 border-t border-slate-700">
+                  <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
+                    <span>📦 v{mod.version}</span>
+                    <span>⬇️ {mod.downloads}</span>
+                  </div>
+                  {/* Nút xem chi tiết - link đến trang /mods/[id] */}
+                  <Link
+                    href={`/mods/${mod.id}`}
+                    className="block w-full text-center py-2 text-sm font-bold
+                               border-2 border-black text-black transition-all
+                               hover:brightness-110 active:translate-y-[1px]"
+                    style={{
+                      backgroundColor: mod.color,
+                      boxShadow: '2px 2px 0px rgba(0,0,0,0.8)',
+                    }}
+                  >
+                    Xem Chi Tiết →
+                  </Link>
                 </div>
               </div>
             </div>
